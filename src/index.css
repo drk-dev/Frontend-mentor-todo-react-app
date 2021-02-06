@@ -1,13 +1,89 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import "./dark-theme.css";
+@import "./light-theme.css";
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@media (max-width: 640px) {
+    .header-bg {
+        width: 100%;
+        background-image: url("./images/bg-mobile-dark.jpg");
+    }
+
+    .title {
+        width: 100%;
+    }
+
+    .main-container {
+        width: 90%;
+        margin: auto;
+        top: 7vh;
+    }
+
+    .checkbox-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 3rem;
+        height: 2rem;
+    }
+
+    .add-todo-checkbox {
+        position: absolute;
+        opacity: 0;
+    }
+
+    .add-todo {
+        width: 100%;
+    }
+
+    .todo-list-container {
+        width: 100%;
+        border: 20px;
+    }
+
+    .todo-list-item {
+        padding: 10px;
+        border-bottom: 1px solid #777a92;
+        display: flex;
+    }
+
+    .todo-list-item p {
+        display: flex;
+        align-items: center;
+        background: none;
+        border: none;
+        color: hsl(0, 0%, 100%);
+        font-size: 1.1rem;
+        font-weight: 400;
+        letter-spacing: 1.1px;
+        outline: none;
+        width: 100%;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+
+    .footer-buttons {
+        visibility: hidden;
+    }
+
+    .buttons-mobile {
+        display: flex;
+        margin: auto;
+        padding: 20px;
+        width: 80%;
+        justify-content: space-between;
+        background-color: none;
+        padding: 5p;
+        outline: none;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    .buttons-mobile button {
+        background: none;
+        border: none;
+        color: #777a92;
+        margin-left: 0.625rem;
+        font-size: 1rem;
+    }
 }

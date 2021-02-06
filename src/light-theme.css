@@ -1,0 +1,36 @@
+.light-app {
+    background-color: hsl(0, 0%, 98%);
+}
+
+.light-header {
+    background-image: url("./images/bg-desktop-light.jpg");
+}
+.moon {
+    background: url(./images/icon-moon.svg);
+}
+
+.light-todo {
+    color: hsl(235, 30%, 31%);
+    background-color: hsl(0, 0%, 98%);
+}
+
+.text-todo-light {
+    color: hsl(235, 19%, 35%);
+    background-color: hsl(0, 0%, 98%);
+}
+
+.todo-list-container-light {
+    background-color: hsl(0, 0%, 98%);
+}
+
+.footer-light p {
+    color: hsl(235, 19%, 35%) !important;
+}
+
+.footer-light button {
+    color: hsl(235, 19%, 35%) !important;
+}
+
+.item-light p {
+    color: hsl(235, 19%, 35%) !important;
+}

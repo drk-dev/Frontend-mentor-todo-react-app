@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
+
+/* font-family: 'Josefin Sans', sans-serif; */
+
+body {
+    font-family: "Josefin Sans", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.App {
+    padding: 0;
+    margin: 0;
+    background-color: hsl(235, 21%, 11%);
+    height: 100vh;
+    transition: 0.7s;
+}
+
+.header-bg {
+    width: 100%;
+    background-image: url("./images/bg-desktop-dark.jpg");
+    background-position: center;
+    background-size: cover;
+    content: "";
+    height: 30vh;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.8s;
+    z-index: 1;
+}
+
+.header-container {
+    height: 10rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    color: #fff;
+}
+
+.title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-container h1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    letter-spacing: 0.618rem;
+}
+
+.switch-icon {
+    transition: 0.3s ease-in-out;
+    width: 1.625rem;
+    height: 1.625rem;
+    cursor: pointer;
+}
+
+.sun {
+    background: url(./images/icon-sun.svg);
+}
+
+.main-container {
+    margin: auto;
+    position: relative;
+    top: 10vh;
+    width: 40rem;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 2rem;
+}
+
+.add-todo-checkbox {
+    position: absolute;
+    opacity: 0;
+}
+
+.add-todo {
+    display: flex;
+    padding: 0.8rem;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 0.625rem;
+    margin-top: 2rem;
+    width: 40rem;
+    height: 3rem;
+    background-color: #25273c;
+    transition: 0.4s;
+}
+
+.add-todo-text {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.1rem;
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: #25273c;
+    color: #cacde8;
+    padding: 0;
+    margin: 0;
+    transition: 0.4s;
+}
+
+.checkbox-label {
+    margin: 0 10px;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    border: 1px solid #777a92;
+    display: inline-block;
+    padding: 0 0 0 0;
+}
+
+input[type="checkbox"]:hover + label {
+    color: #fff;
+    border-radius: 50%;
+    border: 1px solid hsl(220, 98%, 61%);
+    background: url("./images/icon-check.svg"), linear-gradient(to left top, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+input[type="checkbox"] {
+    cursor: pointer;
+}
+
+.todo-list-container {
+    position: relative;
+    width: 40rem;
+    height: auto;
+    background-color: #25273c;
+    z-index: 2;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+footer p {
+    color: #fff;
+}
+.footer-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+}
+
+footer button {
+    background: none;
+    outline: none;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+}
+
+.todo-list-item {
+    padding: 10px;
+    border-bottom: 1px solid #777a92;
+    display: flex;
+}
+
+.todo-list-item p {
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    color: hsl(0, 0%, 100%);
+    font-size: 1.1rem;
+    font-weight: 400;
+    letter-spacing: 1.1px;
+    outline: none;
+    width: 100%;
+}
+
+.delete-btn {
+    font-size: 2.2rem;
+    background: none;
+    border: none;
+    color: #777a92;
+    cursor: pointer;
+    outline: none;
+    transform: rotate(45deg);
+}
+
+.completed {
+    color: rgb(175, 175, 175);
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.buttons-mobile {
+    display: none;
+}
